@@ -94,6 +94,15 @@ HTMLRenderer.prototype.addResult = function(suite, test, result) {
     }
   })
 
+  var testsRan = d3.selectAll('.suite').selectAll('.test')
+  _.forEach(testsRan, function(suite) {
+    if (suite.length < 1) {
+      d3.select(suite.parentNode).classed('display-none', true);
+    } else {
+      d3.select(suite.parentNode).classed('display-none', false);
+    }
+  })
+
   tests.on("click", function(d) {
     console.log(d)
   })
