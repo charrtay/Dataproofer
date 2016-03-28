@@ -334,9 +334,9 @@ function renderStep2(processorConfig) {
 }
 
 function renderStep3(processorConfig) {
+  d3.select(".step-2-select").style("display", "none")
   Processor.run(processorConfig)
   d3.select(".step-3-results").style("display", "block")
-  d3.select(".step-2-select").style("display", "none")
 }
 
 function clear() {

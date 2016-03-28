@@ -13,6 +13,10 @@
   background-color: #F7F6F5;
   box-sizing: border-box;
  }
+
+.display-none {
+  display: none;
+}
 .icon-check {
   background-color: #29A03B;
 }
@@ -215,6 +219,23 @@ STEP  2
   opacity: 1;
 }
 
+.step-2-select .test {
+  margin: 4px;
+  padding: 1em;
+  margin-top: 1em;
+  width: 20%;
+  min-width: 110px;
+  min-height: 200px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  opacity: 0.2;
+  position: relative;
+  overflow: hidden;
+}
+
 button.run-tests {
   /*
   font-size: 1.8em;
@@ -310,6 +331,25 @@ STEP  3
 .step-3-results {
   width: 50%;
   display: none;
+}
+
+.step-3-results .test {
+  /*
+  min-width: 100px;
+  max-width: 100%;
+  */
+  margin: 4px;
+  padding: 1em;
+  margin-top: 1em;
+  width: inherit;
+  display: block;
+  vertical-align: top;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  opacity: 0.2;
+  position: relative;
+  overflow: hidden;
 }
 
 .handsontable td:hover {
@@ -427,37 +467,6 @@ General Suites and test
     box-shadow: none
 }
 
-.suite .test {
-  /*
-  min-width: 100px;
-  max-width: 100%;
-  */
-  margin: 4px;
-  padding: 1em;
-  margin-top: 1em;
-  width: 20%;
-  min-width: 110px;
-  min-height: 200px;
-  /*max-height: 400px;*/
-  /*overflow-y: auto;*/
-  display: inline-block;
-  vertical-align: top;
-  background-color: white;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  opacity: 0.2;
-  position: relative;
-  overflow: hidden;
-}
-
-.suite .test canvas {
-  width: 100%;
-}
-
-.suite .test .onoff {
-
-}
-
 .suite .test.active {
   border: 1px solid black;
   opacity: 1;
@@ -498,9 +507,7 @@ General Suites and test
 }
 
 .suite .test .fingerprint {
-  /*width: 200px;*/
-  /*float: right;*/
-  /*margin-right: 25px;*/
+  text-align: center;
   cursor: pointer;
 }
 
