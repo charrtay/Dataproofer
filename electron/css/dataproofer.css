@@ -507,7 +507,7 @@ General Suites and test
 }
 
 .suite .test .fingerprint {
-  text-align: center;
+  /*text-align: center;*/
   cursor: pointer;
 }
 
